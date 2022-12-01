@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Signup</title>
+</head>
+
+<body>
+    <ul style="display: flex; list-style: none;">
+        <li><img src="img/sggsiet.png" alt="Logo" width="150" height="150" style="border-radius: 5px;">
+        </li>
+        <li style="flex-grow: 4;"><center>
+            <h1>Shri Guru Gobind Singhji Institute of Engineering and Technology <br> Department of Computer Science Engineering </h1>
+        </li>
+        </ul>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active"> Register </h2>
+            <h2 class="inactive underlineHover"><a href="index.html">Log In</a></h2>
+            <!-- Login Form -->
+            <form action="register.php" method="POST">
+                <input type="text" id="name" class="fadeIn second" name="name" placeholder="Name" required>
+                <input type="text" id="name" class="fadeIn second" name="fid" placeholder="Faculty ID" required>
+                <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" required>
+                <input type="submit" class="fadeIn fourth" value="Sign Up">
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <title>Sign In</title>
+    <link rel="shortcut icon" href="img/Favicon/login.ico" type="image/x-icon">
+</head>
+
+<body>
+    <ul style="display: flex; list-style: none;">
+    <li><img src="img/sggsiet.png" alt="Logo" width="150" height="150" style="border-radius: 5px;">
+    </li>
+    <li style="flex-grow: 4;"><center>
+        <h1>Shri Guru Gobind Singhji Institute of Engineering and Technology <br> Department of Computer Science Engineering </h1>
+    </li>
+    </ul>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <h2 class="active"> Log In </h2>
+            <!-- <h2 class="inactive underlineHover"><a href="signup.html">Register</a></h2> -->
+            <!-- Login Form -->
+            <form action="process.php" method="POST">
+                <input type="text" id="fid" class="fadeIn second" name="fid" placeholder="Faculty ID" required>
+                <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" required>
+                
+                <div class="center">
+                    <h4 id="captchaHeading">
+                        Captcha
+                    </h4>
+                    <div id="captchaBackground">
+                        <canvas id="captcha">captcha text</canvas>
+                        <input style="width: 9rem;" id="textBox" type="text" name="text">
+                        <div id="buttons">
+                            <button id="refreshButton" type="submit">Refresh</button>
+                        </div>
+                        <span id="output"></span>
+                    </div>
+                </div> 
+                <input type="submit" class="fadeIn fourth" id="submitButton" value="Sign In">
+            </form>
+            
+        </div>
+    </div>
+</body>
+<script src="JavaScript/script.js"></script>
+
+</html>

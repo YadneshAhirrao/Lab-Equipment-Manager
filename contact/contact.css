@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  box-sizing: border-box;
+  /* background: #56baed; */
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #56baed;
+  text-align: center;
+}
+img {
+  width: 15%;
+  height: auto;
+  padding: 10px;
+}
+h2 {
+  font-size: 60px;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 25%;
+  font-family: "Sono", sans-serif;
+}
+
+h1 {
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  padding-top: 20px;
+}
+p {
+  line-height: 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #444;
+  padding-top: 20px;
+}
+
+ul.list-ul {
+  display: inline;
+}
+
+.list-ul {
+  display: inline-block;
+}
+.logo-image {
+  padding: 20px;
+  padding-left: 20px;
+}
+
+.paragraph {
+  padding: 10px;
+  padding-bottom: 20px;
+  margin: 5%;
+}
+
+.image-logo {
+  box-sizing: border-box;
+}
+
+.background-box {
+  background: white;
+  width: 75%;
+  margin-left: 13%;
+  padding: 1rem;
+  height: 60%;
+  text-align: center;
+  margin-bottom: 10%;
+  border-radius: 10px;
+}
+
+/* BLinking Cursor */
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 60px;
+  color: #2e3d48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+/* end of Cursor BLink */
+
+.devloper-img {
+  width: 25%;
+}
+
+.box-2 {
+  background: rgb(255, 255, 255);
+  width: 75%;
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-left: 13%;
+  margin-bottom: 50%;
+}
+
+.paragraph-2 {
+  text-align: center;
+  padding: 5%;
+}
+
+/* hover Button */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Sono", sans-serif;
+}
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+  margin-bottom: 20px;
+}
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.25rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+button:hover .circle {
+  width: 100%;
+}
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+button:hover .button-text {
+  color: #fff;
+}
